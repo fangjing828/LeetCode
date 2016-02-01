@@ -1,0 +1,23 @@
+allprojects {
+	repositories {
+		mavenCentral ()
+	}
+}
+subprojects {
+	group ='com.leetcode'
+	version = '1.0.0'
+	apply plugin: 'java'
+	apply plugin: 'eclipse'
+	apply plugin: 'idea'
+	
+	eclipse {
+		classpath {
+			downloadSources = true
+			downloadJavadoc = true
+		}
+	}
+	
+	dependencies {
+	   testCompile 'junit:junit:4.11'
+	}
+}
