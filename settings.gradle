@@ -1,4 +1,6 @@
 rootProject.name="leetcode"
 include 'leetcode-anagram'
 include 'leetcode-closest'
+include 'leetcode-circularbuffer'
+include 'leetcode-random'
 
