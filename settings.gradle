@@ -1,3 +1,4 @@
 rootProject.name="leetcode"
 include 'leetcode-anagram'
+include 'leetcode-closest'
 

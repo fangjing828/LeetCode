@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public class ValidAnagram {
 	/**
-	 * Give two strings s and t, use isAnagram to determine if t is an anagram of s.
+	 * Given two strings s and t, use isAnagram to determine if t is an anagram of s.
 	 * @return boolean {@code true} if t is an anagram of s, otherwise {@code false}.
 	 */
 	public boolean isAnagram(final String s, final String t) {
