@@ -37,10 +37,9 @@ class PercentileBuffer<T> extends CircularBuffer<PercentileBucket<T>> {
 
 	public void visitData(final GenericAction<T> action)
 	{
-		final long currentBucketStartTime = this.time.getCurrentTimeInMillis();
+		final long currentBufferStartTime = this.time.getCurrentTimeInMillis();
 		for (final PercentileBucket<T> bucket : this.buckets) {
-			if ((bucket.timeInMillis() <= currentBucketStartTime) && ((bucket.timeInMillis() + this.timeWindowInMillis) > currentBucketStartTime))
-			{
+			if (this.isInBufferStatsWindow(bucket, currentBufferStartTime)) {
 				final int count = bucket.count();
 				for (int j = 0; j < count; j++)
 				{

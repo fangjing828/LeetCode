@@ -3,4 +3,8 @@ include 'leetcode-anagram'
 include 'leetcode-closest'
 include 'leetcode-circularbuffer'
 include 'leetcode-random'
+include 'leetcode-hystrix'
+include 'leetcode-circuitbreaker'
+include 'leetcode-property'
+include 'leetcode-key'
 

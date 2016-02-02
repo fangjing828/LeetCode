@@ -1,0 +1,5 @@
+dependencies {
+	compile project(':leetcode-property')
+	compile project(':leetcode-circularbuffer')
+	compile project(':leetcode-key')
+}
