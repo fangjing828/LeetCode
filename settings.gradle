@@ -7,4 +7,5 @@ include 'leetcode-hystrix'
 include 'leetcode-circuitbreaker'
 include 'leetcode-property'
 include 'leetcode-key'
+include 'leetcode-stats'
 
