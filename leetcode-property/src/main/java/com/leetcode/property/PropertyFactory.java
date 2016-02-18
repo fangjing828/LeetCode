@@ -82,7 +82,7 @@ public class PropertyFactory {
 	}
 
 	private static class ChainedProperty<T> implements Property<T> {
-		T value;
+		private T value;
 
 		public ChainedProperty(final List<Property<T>> items)
 		{
