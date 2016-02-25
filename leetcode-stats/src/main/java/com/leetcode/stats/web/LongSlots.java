@@ -17,9 +17,9 @@ public class LongSlots {
 	
 	public synchronized LongSlots slot(String name, Long upperLimit) {
 		this.nameMap.put(upperLimit, name);
-		Long[] ss = nameMap.keySet().toArray(new Long[0]);
-        Arrays.sort(ss);
-        scales = ss;
+		Long[] tmp = nameMap.keySet().toArray(new Long[0]);
+        Arrays.sort(tmp);
+        scales = tmp;
 		return this;
 	}
 	
